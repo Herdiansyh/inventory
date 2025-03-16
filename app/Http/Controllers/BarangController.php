@@ -37,11 +37,11 @@ class BarangController extends Controller
         $barang->satuan = $request->input('satuan');
         $barang->tanggal_masuk = $request->input('tanggal_masuk');
         $barang->tanggal_keluar = $request->input('tanggal_keluar');
-        $barang->jumlah = $request->input('jumlah');
         $barang->harga_modal = $request->input('harga_modal');
         $barang->harga_jual = $request->input('harga_jual');
         $barang->foto_barang = $request->input('foto_barang');
         $barang->deskripsi = $request->input('deskripsi');
+        $barang->type = $request->input('type');
         $barang->save();
 
         return redirect()->route('barang.index')->with('success', 'Barang berhasil ditambahkan');

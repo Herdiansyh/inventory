@@ -17,9 +17,10 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(User::class)->constrained()->cascadeOnUpdate();
             $table->foreignIdFor(Barang::class)->constrained()->cascadeOnUpdate();
-            $table->date('tanggal_laporan');
-            $table->string('laporan_barang_masuk');
-            $table->string('laporan_barang_keluar');
+            $table->date('tanggal_masuk');
+            $table->date('tanggal_keluar')->nullable();
+            $table->integer('qty_barang');
+            $table->string('type');
             $table->timestamps();
         });
     }

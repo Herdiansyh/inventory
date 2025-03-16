@@ -20,12 +20,13 @@ return new class extends Migration
             $table->string('ukuran');
             $table->string('satuan');
             $table->date('tanggal_masuk');
-            $table->date('tanggal_keluar');
-            $table->decimal('jumlah');
+            $table->date('tanggal_keluar')->nullable();
             $table->decimal('harga_modal');
             $table->decimal('harga_jual');
             $table->string('foto_barang');
             $table->string('deskripsi');
+            $table->string('type');
+           
             $table->timestamps();
         });
     }
