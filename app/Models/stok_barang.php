@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class stok_barang extends Model
 {
     /**
-     * The attributes that aren't mass assignable.
+     * The attributes that aren't mass.
      *
      * @var array
      */
