@@ -28,7 +28,23 @@ class BarangController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $barang = new Barang();
+        $barang->nama_barang = $request->input('nama_barang');
+        $barang->merk = $request->input('merk');
+        $barang->kategori = $request->input('kategori');
+        $barang->sub_kategori = $request->input('sub_kategori');
+        $barang->ukuran = $request->input('ukuran');
+        $barang->satuan = $request->input('satuan');
+        $barang->tanggal_masuk = $request->input('tanggal_masuk');
+        $barang->tanggal_keluar = $request->input('tanggal_keluar');
+        $barang->jumlah = $request->input('jumlah');
+        $barang->harga_modal = $request->input('harga_modal');
+        $barang->harga_jual = $request->input('harga_jual');
+        $barang->foto_barang = $request->input('foto_barang');
+        $barang->deskripsi = $request->input('deskripsi');
+        $barang->save();
+
+        return redirect()->route('barang.index')->with('success', 'Barang berhasil ditambahkan');
     }
 
     /**

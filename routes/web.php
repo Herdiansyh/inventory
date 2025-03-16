@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     })->name('barang.index');
 
     // Route untuk barang masuk (menggunakan controller)
-    Route::get('/barangMasuk', [BarangMasukController::class, 'index'])->name('barang.barangMasuk');
+    Route::resource('/barangMasuk', BarangMasukController::class);
     Route::get('/barangKeluar', [BarangKeluarController::class, 'index'])->name('barang.barangKeluar');
     Route::get('/stok', [StokBarangController::class, 'index'])->name('stok.index');
 

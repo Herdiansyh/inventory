@@ -11,7 +11,7 @@ class BarangKeluarController extends Controller
     //   
     public function index()
     {
-        return view('dashboard.barang.barangKeluar');
+        return view('dashboard.barang.barangkeluar.index');
  
     }
 
@@ -28,7 +28,7 @@ class BarangKeluarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

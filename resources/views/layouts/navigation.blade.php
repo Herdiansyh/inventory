@@ -29,7 +29,7 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            <x-dropdown-link :href="route('barang.barangMasuk')">
+                            <x-dropdown-link :href="route('barangMasuk.index')">
                                 {{ __('Barang Masuk') }}
                             </x-dropdown-link>
                             <x-dropdown-link :href="route('barang.barangKeluar')">
