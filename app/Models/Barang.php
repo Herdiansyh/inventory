@@ -16,7 +16,7 @@ class Barang extends Model
 
  public function laporans()
  {
-    $this->hasMany(Laporan::class);
+   return $this->hasMany(Laporan::class);
  }
 
 }

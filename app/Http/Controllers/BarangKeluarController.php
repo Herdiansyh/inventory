@@ -1,19 +1,18 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use App\Models\stok_barang;
 use Illuminate\Http\Request;
 
-class StokBarangController extends Controller
+class BarangKeluarController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    //   
     public function index()
     {
-        return view('dashboard.stok.index');
-  
+        return view('dashboard.barang.barangKeluar');
+ 
     }
 
     /**

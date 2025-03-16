@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\stok_barang;
+use App\Models\Barang;
 use Illuminate\Http\Request;
 
-class StokBarangController extends Controller
+class BarangMasukController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('dashboard.stok.index');
-  
+        return view('dashboard.barang.barangMasuk');
     }
 
     /**
@@ -35,7 +34,7 @@ class StokBarangController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(stok_barang $stok_barang)
+    public function show(Barang $barang)
     {
         //
     }
@@ -43,7 +42,7 @@ class StokBarangController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(stok_barang $stok_barang)
+    public function edit(Barang $barang)
     {
         //
     }
@@ -51,7 +50,7 @@ class StokBarangController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, stok_barang $stok_barang)
+    public function update(Request $request, Barang $barang)
     {
         //
     }
@@ -59,7 +58,7 @@ class StokBarangController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(stok_barang $stok_barang)
+    public function destroy(Barang $barang)
     {
         //
     }
